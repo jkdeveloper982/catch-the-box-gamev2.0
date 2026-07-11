@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catch the Box Game</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+  <h1>🎮 Catch the Box</h1>
+
+  <div class="stats">
+      <div>⭐ Score: <span id="score">0</span></div>
+      <div>🏆 High Score: <span id="highScore">0</span></div>
+      <div>❤️ Lives: <span id="lives">3</span></div>
+      <div>⏳ Time: <span id="timer">30</span>s</div>
+  </div>
+
+  <div class="difficulty">
+      <label>Select Difficulty:</label>
+
+      <select id="difficulty">
+          <option value="1000">Easy</option>
+          <option value="700">Medium</option>
+          <option value="450">Hard</option>
+      </select>
+  </div>
+
+  <div id="gameArea">
+
+      <!-- Normal Box -->
+      <div id="box"></div>
+
+      <!-- Golden Bonus Box -->
+      <div id="goldBox"></div>
+
+      <!-- Bomb -->
+      <div id="bomb"></div>
+
+  </div>
+
+  <button id="startBtn">
+      ▶ Start Game
+  </button>
+
+  <button id="restartBtn">
+      🔄 Restart
+  </button>
+
+  <h2 id="message"></h2>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
